@@ -1,0 +1,78 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "caecd9b0-6e46-11ee-a455-b9d40398652f"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "88bb4910-6e6d-11ee-94f5-837300f44a25"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "eed83690-6e45-11ee-a455-b9d40398652f"
+    },
+    "label" : "",
+    "name" : "WS1_Device",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "caecd9b0-6e46-11ee-a455-b9d40398652f"
+    },
+    "softwareId" : null,
+    "type" : "Weather Profile"
+  },
+  "credentials" : {
+    "credentialsId" : "BPbkkS3EwKsCSmxAt9Sw",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "00cab460-6e44-11ee-b316-e98779654669"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "eed83690-6e45-11ee-a455-b9d40398652f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1697696360080,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1697696360081,
+      "longValue" : 1697696360077,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

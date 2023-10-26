@@ -1,0 +1,57 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d2ab2100-6e7a-11ee-a455-b9d40398652f"
+    },
+    "name" : "Weather Customer C2",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : null,
+    "title" : "Weather Customer C2",
+    "zip" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "TENANT",
+      "id" : "83140710-6687-11ee-bf9c-eb3113b7c81a"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d2ab2100-6e7a-11ee-a455-b9d40398652f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d2ab2100-6e7a-11ee-a455-b9d40398652f"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "c8d3da20-6f09-11ee-b2ca-ab7802d7aea5"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

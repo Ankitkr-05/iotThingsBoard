@@ -1,0 +1,114 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "6ee378c0-668c-11ee-9a72-255cc9387192"
+    },
+    "name" : "Weather Report",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 233,
+        "layoutY" : 226
+      },
+      "configuration" : {
+        "msgCount" : 100,
+        "periodInSeconds" : 60,
+        "scriptLang" : "JS",
+        "jsScript" : "var humidity = Math.floor(Math.random() * (80 - 20 + 1) + 20); // Random humidity between 20 and 80\nvar temperature = Math.floor(Math.random() * (30 - 10 + 1) + 10); // Random temperature between 10 and 30\nvar windSpeed = Math.floor(Math.random() * 21); // Random wind speed between 0 and 20\nvar uvRadiation = Math.random() * 10; // Random UV radiation between 0 and 10\nvar lightIntensity = Math.floor(Math.random() * (1000 - 100 + 1) + 100); // Random light intensity between 100 and 1000\n\nvar msg = {\n  humidity: humidity,\n  temperature: temperature,\n  windSpeed: windSpeed,\n  uvRadiation: uvRadiation,\n  lightIntensity: lightIntensity\n};\n\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "queueName" : null,
+        "originatorId" : "eed83690-6e45-11ee-a455-b9d40398652f",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e5a8d140-6e4c-11ee-9958-0b36635133ad"
+      },
+      "name" : "WeatherDataGenerator",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 500,
+        "layoutY" : 310
+      },
+      "configuration" : {
+        "ruleChainId" : "836163c0-6687-11ee-bf9c-eb3113b7c81a"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8e1e1f60-6e4d-11ee-94f5-837300f44a25"
+      },
+      "name" : "Weather Rule",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 236,
+        "layoutY" : 77
+      },
+      "configuration" : {
+        "msgCount" : 100,
+        "periodInSeconds" : 60,
+        "scriptLang" : "JS",
+        "jsScript" : "var humidity = Math.floor(Math.random() * (80 - 20 + 1) + 20); // Random humidity between 20 and 80\nvar temperature = Math.floor(Math.random() * (30 - 10 + 1) + 10); // Random temperature between 10 and 30\nvar windSpeed = Math.floor(Math.random() * 21); // Random wind speed between 0 and 20\nvar uvRadiation = Math.random() * 10; // Random UV radiation between 0 and 10\nvar lightIntensity = Math.floor(Math.random() * (1000 - 100 + 1) + 100); // Random light intensity between 100 and 1000\n\nvar msg = {\n  humidity: humidity,\n  temperature: temperature,\n  windSpeed: windSpeed,\n  uvRadiation: uvRadiation,\n  lightIntensity: lightIntensity\n};\n\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "queueName" : null,
+        "originatorId" : "114c1930-6e46-11ee-94f5-837300f44a25",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a1fba150-6e6c-11ee-a455-b9d40398652f"
+      },
+      "name" : "weatherGenerator",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

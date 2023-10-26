@@ -1,0 +1,85 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "83169f20-6687-11ee-bf9c-eb3113b7c81a"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "254403f0-6e44-11ee-9958-0b36635133ad"
+    },
+    "label" : null,
+    "name" : "WS2",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "USER",
+      "id" : "c8d3da20-6f09-11ee-b2ca-ab7802d7aea5"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "254403f0-6e44-11ee-9958-0b36635133ad"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "254403f0-6e44-11ee-9958-0b36635133ad"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "114c1930-6e46-11ee-94f5-837300f44a25"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 17.36,
+      "jsonValue" : null,
+      "key" : "Latitude",
+      "lastUpdateTs" : 1697716907726,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 78.48,
+      "jsonValue" : null,
+      "key" : "Longitude",
+      "lastUpdateTs" : 1697716925303,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.36,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1697717230199,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 78.48,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1697717248507,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

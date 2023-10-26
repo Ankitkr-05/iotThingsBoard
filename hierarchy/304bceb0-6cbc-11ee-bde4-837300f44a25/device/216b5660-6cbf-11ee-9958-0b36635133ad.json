@@ -1,0 +1,66 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "304bceb0-6cbc-11ee-bde4-837300f44a25"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "ecc59ca0-6cb8-11ee-b821-b9d40398652f"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "216b5660-6cbf-11ee-9958-0b36635133ad"
+    },
+    "label" : "",
+    "name" : "Door Device D1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "304bceb0-6cbc-11ee-bde4-837300f44a25"
+    },
+    "softwareId" : null,
+    "type" : "Door Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "v4uueLmXNbRwdL6ALh8E",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1697528518054,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1697528518055,
+      "longValue" : 1697528518054,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
